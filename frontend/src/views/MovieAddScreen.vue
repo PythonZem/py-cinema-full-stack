@@ -123,7 +123,7 @@ export default {
           data.append('image', this.image);
           await axios.post(
               `${
-                import.meta.env.VITE_API_URL}/api/cinema/movies-${movie.id}-upload-image/`,
+                import.meta.env.VITE_API_URL}/api/cinema/movies/${movie.id}/upload-image/`,
               data,
               imageConfig
           );
